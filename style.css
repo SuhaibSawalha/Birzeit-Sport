@@ -1,0 +1,1030 @@
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Lugrasimo&display=swap");
+/*
+  font-family: 'Croissant One', cursive;
+  font-family: 'Lugrasimo', cursive;
+*/
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&display=swap");
+/*
+  font-family: 'El Messiri', sans-serif;
+*/
+@import url("https://fonts.googleapis.com/css2?family=Amiri:wght@700&display=swap");
+/*
+  font-family: 'Amiri', serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+p {
+  margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
+  direction: rtl;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #d6e7d6 !important;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./img/birzeit.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0 -50px;
+  position: relative;
+}
+
+.after {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 99;
+  position: absolute;
+  transition: background 0.4s ease-in-out;
+}
+
+#welcome {
+  width: 100%;
+  color: white;
+  z-index: 999;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#welcome h1 {
+  color: green;
+  font-size: 4rem;
+  font-family: "Croissant One", cursive;
+  font-family: "Lugrasimo", cursive;
+  -webkit-text-stroke: 1px black;
+  text-shadow: 3px 3px 3px black;
+}
+
+#welcome h4 {
+  font-family: "El Messiri", sans-serif;
+}
+
+@media (max-width: 1200px) {
+  header {
+    background-position: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  #welcome h1 {
+    font-size: 3rem;
+  }
+}
+
+nav {
+  font-family: "El Messiri", sans-serif;
+  height: 60px;
+  transition: background 0.4s ease-in-out;
+}
+
+nav a {
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  z-index: 9999999;
+}
+
+nav p,
+nav h3 {
+  margin-bottom: 0;
+}
+
+.navbar-nav {
+  flex-direction: row-reverse !important;
+  justify-content: space-between;
+  width: 470px;
+}
+
+@media (max-width: 767.5px) {
+  nav {
+    background-color: green;
+  }
+  .navbar-nav {
+    background-color: green;
+    flex-direction: column !important;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: end;
+    width: 100%;
+    height: 200px;
+  }
+}
+
+/* nav {
+  font-family: "El Messiri", sans-serif;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  color: white;
+  transition: background 0.4s ease-in-out;
+}
+
+nav h3 {
+  margin: 0;
+}
+
+nav > div {
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav > div > div {
+  width: 470px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+}
+
+nav div div a {
+  position: relative;
+}
+
+nav div div a p {
+  position: relative;
+  margin-bottom: 0;
+  z-index: 9999999;
+} */
+
+#back {
+  position: absolute;
+  width: 0;
+  height: 40px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.8s ease;
+}
+
+.line {
+  width: 100%;
+  height: 5px;
+  background-color: green;
+  margin: 30px auto;
+}
+
+section {
+  width: 100%;
+  background-color: #e4eae4;
+  padding: 30px;
+  text-align: right;
+  scroll-margin-top: 60px;
+  position: relative;
+}
+
+#introduction {
+  text-align: center;
+}
+
+li::marker {
+  color: green;
+}
+
+.sectionTitle {
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
+  justify-content: end;
+  margin-bottom: 10px;
+}
+
+.sectionTitle h2 {
+  margin-bottom: 0;
+}
+
+.titleBox {
+  width: 10px;
+  height: 40px;
+  background-color: green;
+  margin-left: 10px;
+}
+
+#food > ul > li {
+  margin-right: 20px;
+}
+
+#food > ul > li > div {
+  display: inline-flex;
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+}
+
+#food > ul > li > div > p {
+  transition: color 0.3s ease-in-out;
+}
+
+#food > ul > li > div > i {
+  color: rgb(108, 189, 169);
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin-top: -3px;
+}
+
+#food > ul > li > div:hover p {
+  color: rgb(108, 189, 169);
+}
+
+#food > ul > li > div:hover i {
+  font-weight: bold;
+}
+
+.food-food {
+  background-color: rgb(108, 189, 169);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.7s ease-in-out;
+}
+
+.food-food div {
+  width: 100%;
+  height: 100%;
+  padding: 20px 40px;
+}
+
+#food lord-icon {
+  width: 100px;
+  height: 100px;
+}
+
+#food p:nth-child(2) {
+  margin-top: -60px;
+  padding-left: 100px;
+}
+
+@media (max-width: 767.5px) {
+  #food lord-icon {
+    width: 70px;
+    height: 70px;
+  }
+  #food p:nth-child(2) {
+    margin-top: -20px;
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .food-food div {
+    padding: 20px 30px 20px 20px;
+  }
+  #food > ul {
+    padding-left: 0;
+  }
+}
+
+.open-food {
+  max-height: 10000px;
+}
+
+.food-food ul:nth-child(4) li::marker {
+  content: "■";
+}
+
+.food-food ul:nth-child(4) li p {
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.removePadding {
+  margin: 0 -20px 5px 0;
+}
+
+.paragraphLine {
+  width: 90%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-top: 5px;
+  margin-bottom: 10px;
+  position: absolute;
+  right: 30px;
+}
+
+ul {
+  font-family: "El Messiri", sans-serif;
+}
+
+#food ul:nth-child(8) li {
+  margin-top: 5px;
+}
+
+.physical {
+  height: 300px;
+  padding: 20px;
+}
+
+.physical div {
+  border: 1px solid green;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s ease-in-out, transform 1s ease-in-out,
+    width 1s ease-in-out;
+}
+
+.physical img {
+  padding: 20px;
+  width: 180px;
+  height: 180px;
+}
+
+.physical h1 {
+  font-family: "El Messiri", sans-serif;
+  color: green;
+  transition: color 0.5s ease-in-out;
+}
+
+.physical div:hover {
+  cursor: pointer;
+  background-color: rgb(53, 180, 53);
+}
+
+.physical div:hover h1 {
+  color: black;
+}
+
+.sport-sport {
+  position: fixed;
+  width: min(100%, 1000px) !important;
+  height: 100vh;
+  background-color: white;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999999;
+  overflow: hidden;
+  /* max-width: 0; */
+  max-height: 0;
+  text-align: center;
+  transition: max-width 1s ease-in-out, max-height 1s ease-in-out;
+}
+
+.empty {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  left: 0;
+  top: 0;
+  z-index: 999999;
+}
+
+.sport-sport h1,
+.sport-sport h4 {
+  font-family: "El Messiri", sans-serif;
+  color: green;
+}
+
+.sport-sport h4 {
+  margin-top: 30px;
+}
+
+.sport-sport p {
+  font-family: "Amiri", serif;
+}
+
+.sport-sport li {
+  font-family: "Amiri", serif;
+  text-align: start;
+}
+
+.sport-sport div {
+  text-align: start;
+}
+
+.sport-sport i {
+  font-size: 1.5rem;
+  color: red;
+}
+
+.sport-sport i:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.sport-sport > div:first-child p {
+  margin-bottom: 0;
+}
+
+.sport-sport img {
+  position: absolute;
+  left: 50%;
+  margin-top: 20px;
+  transform: translate(-50%, 0);
+  width: min(calc(100% - 20px), 500px);
+  height: 330px;
+}
+
+.titleLine {
+  width: 90%;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+}
+
+.plan {
+  width: 100%;
+  height: 100px;
+  margin-top: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  transition: background-color 0.5s ease-in-out;
+  z-index: 99;
+  position: relative;
+  background-color: #e4eae4;
+}
+
+#plans .plan:nth-child(3) {
+  margin-top: 50px;
+}
+
+.plan h3 {
+  font-family: "El Messiri", sans-serif;
+  margin-bottom: 0;
+  transition: color 0.5s ease-in-out;
+}
+
+.plan i {
+  font-size: 2.5rem;
+  color: rgb(108, 189, 169);
+}
+
+.plan:hover {
+  cursor: pointer;
+  background-color: rgb(208, 206, 206);
+}
+
+.plan-plan {
+  background-color: rgb(108, 189, 169);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.5s ease-in-out;
+  margin-top: -10px;
+  z-index: 9;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+}
+
+.open-plan {
+  max-height: 10000px;
+}
+
+.plan-plan a {
+  color: green;
+  font-size: 1.5rem;
+  margin-right: 10px;
+  font-family: "El Messiri", sans-serif;
+}
+
+.plan-plan input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  position: relative;
+  border: 1px solid black;
+  transition: background-color 0.5s ease;
+}
+
+.plan-plan input[type="checkbox"]:not(:checked)::before {
+  display: none;
+}
+
+.plan-plan input[type="checkbox"]::before {
+  content: "\2713";
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.plan-plan input[type="checkbox"]:checked {
+  background-color: green;
+}
+
+.plan-plan input[type="checkbox"]:checked::before {
+  display: block;
+}
+
+.prgress {
+  display: flex;
+  flex-direction: row-reverse;
+  background: none;
+}
+
+#calendar {
+  margin-top: 60px;
+  text-align: center;
+}
+
+#days {
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+#days div {
+  text-align: center;
+  padding: 0;
+}
+
+#controlCalendar {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  .importantForMedia {
+    width: 60px !important;
+  }
+  .notImportantForMedia {
+    width: 10px !important;
+  }
+}
+
+@media (max-width: 767.5px) {
+  #days .importantForMedia {
+    font-size: 0.7rem;
+  }
+  .importantForMedia {
+    width: 40px !important;
+  }
+  .notImportantForMedia {
+    width: 0 !important;
+  }
+}
+
+@media (max-width: 350px) {
+  #days .importantForMedia {
+    font-size: 0.5rem;
+  }
+  .importantForMedia {
+    width: 30px !important;
+  }
+  .notImportantForMedia {
+    width: 0 !important;
+  }
+  #controlCalendar .btn {
+    font-size: 0.7rem !important;
+  }
+}
+
+.input-container {
+  position: relative;
+  display: inline-block;
+}
+
+.animated-input {
+  width: 100px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: end;
+  margin-left: 10px;
+}
+
+#challenge #exerciseName {
+  width: 200px;
+}
+
+#challenge > div:nth-child(4) {
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 767.5px) {
+  #challenge .btn {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 575.5px) {
+  #challenge #exerciseName {
+    width: 310px;
+  }
+  #challenge #minutes,
+  #challenge #seconds {
+    margin-top: 10px;
+    width: 150px;
+  }
+}
+@media (max-width: 403.5px) {
+  #challenge #exerciseName {
+    width: 210px;
+  }
+  #challenge #minutes,
+  #challenge #seconds {
+    margin-top: 10px;
+    width: 100px;
+  }
+}
+
+.animated-label {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: 0.3s ease-out;
+}
+
+.animated-input:focus + .animated-label,
+.animated-input:not(:placeholder-shown) + .animated-label {
+  top: -2px;
+  background-color: white;
+  border: 1px solid black;
+  padding: 2px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: green;
+}
+
+#challenge button {
+  width: 80px;
+  height: 45px;
+}
+
+.gym {
+  border: 1px solid black;
+  height: 50px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  color: green;
+  position: relative;
+  transition: color 0.5s ease, background-color 0.5s ease;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.gym h3 {
+  margin-right: 20px;
+}
+
+.gym h4 {
+  width: 170px;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.gym div {
+  display: flex;
+  align-items: center;
+}
+
+.gym div p {
+  color: #ffb122;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  width: 40px;
+  text-align: left;
+}
+
+.gym lord-icon {
+  width: 25px;
+  height: 25px;
+}
+
+#gymsList a {
+  text-decoration: none;
+}
+
+.gym:hover {
+  background-color: rgb(0, 192, 0);
+  color: black;
+}
+
+@media (max-width: 1399px) {
+  .gym h4 {
+    font-size: 1.2rem;
+    width: 140px;
+  }
+  .gym h3 {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .gym {
+    padding-left: 0;
+  }
+  .gym h4 {
+    font-size: 1.5rem;
+    width: 180px;
+  }
+  .gym h3 {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .gym h4 {
+    width: 230px;
+  }
+  .gym h3 {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 767.5px) {
+  .gym {
+    padding-left: 0;
+  }
+  .gym h4 {
+    font-size: 1.5rem;
+    width: 180px;
+  }
+  .gym h3 {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gym {
+    padding-left: 5px;
+  }
+  .gym h4 {
+    font-size: 1rem;
+    width: 120px;
+  }
+  .gym h3 {
+    margin-right: 10px;
+  }
+  .gym div p {
+    font-size: 1rem;
+    width: 30px;
+  }
+  .gym lord-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 380px) {
+  .gym h4 {
+    font-size: 0.8rem;
+    width: 100px;
+  }
+  .gym div p {
+    font-size: 0.8rem;
+    width: 25px;
+  }
+  .gym lord-icon {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 300px) {
+  .gym {
+    padding: 0;
+  }
+}
+
+#contact {
+  background-color: white;
+  margin: 50px auto 0 auto;
+  padding: 50px;
+  position: relative;
+  font-family: "El Messiri", sans-serif;
+}
+
+#contact h3 {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+}
+
+#map {
+  width: calc(100% - 100px);
+  height: 450px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#map iframe {
+  width: 100%;
+  height: 450px;
+}
+
+#contactInfo {
+  margin-top: 520px;
+  height: 250px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+}
+
+#infoSection {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.info i,
+.info label {
+  font-size: 25px;
+  align-items: end;
+  color: green;
+}
+
+.info i {
+  margin-left: 5px;
+}
+
+.info p {
+  padding-right: 30px;
+  padding-top: 5px;
+  font-size: 20px;
+}
+
+#form {
+  width: 60%;
+  height: 100%;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#form div {
+  text-align: end;
+  width: 100%;
+}
+
+#form label {
+  font-size: 20px;
+}
+
+#form input {
+  font-size: 15px;
+  margin-top: 10px;
+  width: 100%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  text-align: end;
+}
+
+#submit {
+  margin-top: 20px;
+  border: none;
+  background-color: green;
+  color: white;
+  font-size: 25px;
+  border-radius: 5px;
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  #contact {
+    height: 1320px;
+  }
+  #contactInfo {
+    height: 600px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #infoSection {
+    width: 100%;
+    height: 45%;
+    align-items: center;
+  }
+  #form {
+    width: 100%;
+    height: 50%;
+  }
+  #map {
+    width: 80%;
+  }
+}
+
+@media (max-width: 400px) {
+  #contact {
+    padding: 10px;
+    height: 1280px;
+  }
+  #map {
+    width: 80%;
+  }
+}
+
+footer {
+  margin-top: -15px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin-bottom: 20px;
+}
+
+footer > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-family: "El Messiri", sans-serif;
+  font-weight: 900;
+}
+
+footer > div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  font-size: 35px;
+}
+
+footer p {
+  margin-left: 5px;
+  margin-bottom: 0;
+}
+
+footer a {
+  color: black;
+  transition: transform 0.5s ease-in-out;
+}
+
+footer a:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.bi-facebook:hover {
+  color: #3b5998;
+}
+.bi-twitter:hover {
+  color: #00acee;
+}
+.bi-instagram:hover {
+  color: #d62976;
+}
+.bi-telegram:hover {
+  color: #0088cc;
+}
+
+@media (max-width: 500px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
