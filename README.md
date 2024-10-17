@@ -2,6 +2,8 @@
 
 Welcome to Birzeit Sport! This is a health and fitness web platform specifically designed for Birzeit University students to help them stay healthy and active. The platform offers personalized recommendations for healthy foods, exercise routines, training schedules, gym locations, and much more.
 
+<a href="https://suhaibsawalha.github.io/Birzeit-Sport/">visit the website</a>
+
 <h3>Features</h3>
 <ul>
 <li> Track Your Health: Monitor your daily fitness progress with easy-to-use tools.</li>
